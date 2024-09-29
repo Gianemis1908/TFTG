@@ -6096,12 +6096,12 @@ focus_tree = {
 		completion_reward = {
 			country_event = sicameon_frtr.1
 		}
-		
+	}	
 	focus = {
 		id = SIC_noble_pride
 		icon = GFX_SIC_make_the_best_out_of_this
 		cost = 5
-		relative_position_id = SIC_springtime_sic #clamped to SIC_springtime_sic, so that when you plug it in to the main focus tree you only have to move SIC_springtime_sic to orient it.
+		relative_position_id = SIC_springtime_sic 
 		x = 3
 		y = 1
 		prerequisite = {
@@ -6110,8 +6110,7 @@ focus_tree = {
 		completion_reward = {
 			country_event = sicameon_frtr.1
 		}
-	}
-	
+	}	
 	focus = {
 		id = SIC_justify_regency
 		icon = GFX_SIC_justify_the_regency
