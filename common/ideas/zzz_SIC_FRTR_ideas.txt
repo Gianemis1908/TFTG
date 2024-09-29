@@ -1,0 +1,1118 @@
+ideas = {
+	country = {
+	
+		new_religious_mythos = {
+			name = new_religious_mythos
+			
+			picture = new_religious_mythos
+			
+			allowed = {
+				tag = SIC
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.05
+				stability_factor = 0.03
+			}
+		}
+		
+		new_griffonian_identity_1 = {
+			name = new_griffonian_identity
+			
+			picture = new_griffonian_identity
+			
+			allowed = {
+				tag = SIC
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.02
+				army_attack_factor = 0.05
+				conscription = 0.02
+				stability_factor = 0.04
+
+			}
+		}
+
+		new_griffonian_identity_2 = {
+			name = new_griffonian_identity
+			
+			picture = new_griffonian_identity
+			
+			allowed = {
+				tag = SIC
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.035
+				army_attack_factor = 0.1
+				conscription = 0.03
+				stability_factor = 0.07
+
+			}
+		}
+
+		new_griffonian_identity_3 = {
+			name = new_griffonian_identity
+			
+			picture = new_griffonian_identity
+			
+			allowed = {
+				tag = SIC
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				army_attack_factor = 0.15
+				conscription = 0.04
+				stability_factor = 0.1
+
+			}
+		}
+	
+		republican_tension = {
+			name = republican_tension
+			
+			picture = republican_tension
+			
+			allowed = {
+				tag = SIC
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.15
+				democratic_drift = 0.03
+				communism_drift = 0.03
+			}
+		}
+
+		republican_tension_1 = {
+			name = republican_tension
+			
+			picture = republican_tension
+			
+			allowed = {
+				tag = SIC
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.10
+				democratic_drift = 0.08
+				communism_drift = 0.08
+			}
+		}
+
+		republican_tension_2 = {
+			name = republican_tension
+			
+			picture = republican_tension
+			
+			allowed = {
+				tag = SIC
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.30
+				political_power_factor = -0.20
+				democratic_drift = 0.11
+				communism_drift = 0.11
+				fascism_drift = 0.06
+			}
+		}
+
+		republican_tension_3 = {
+			name = republican_tension
+			
+			picture = republican_tension
+			
+			allowed = {
+				tag = SIC
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.25
+				political_power_factor = -0.1
+				democratic_drift = 0.07
+				communism_drift = 0.04
+			}
+		}
+
+		republican_tension_4 = {
+			name = republican_tension
+			
+			picture = republican_tension
+			
+			allowed = {
+				tag = SIC
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.3
+				political_power_factor = -0.15
+				democratic_drift = 0.12
+				communism_drift = 0.04
+			}
+		}
+
+		dead_monarchy = {
+			name = dead_monarchy
+			
+			picture = dead_monarchy
+			
+			allowed = {
+				tag = SIC
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = -0.03
+				war_support_factor = -0.1
+			}
+		}
+
+		swordfish_claws = {
+			name = swordfish_claws
+			
+			picture = swordfish_claws
+			
+			allowed = {
+				tag = SIC
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.08
+				stability_factor = -0.14
+				min_export = 0.4
+			}
+		}
+	
+		swordfish_claws_1 = {
+			name = swordfish_claws
+			
+			picture = swordfish_claws
+			
+			allowed = {
+				tag = SIC
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.04
+				stability_factor = -0.07
+				min_export = 0.2
+			}
+		}
+	
+		swordfish_claws_2 = {
+			name = swordfish_claws
+			
+			picture = swordfish_claws
+			
+			allowed = {
+				tag = SIC
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+				stability_factor = -0.035
+				min_export = 0.1
+			}
+		}
+		
+		eternal_navy_1 = {
+			name = eternal_navy
+			
+			picture = eternal_navy
+			
+			allowed = {
+				tag = SIC
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				experience_gain_navy = 0.03
+				navy_chief_cost_factor = -0.1
+				navy_screen_attack_factor	= 0.15
+				screening_efficiency = 0.15
+			}
+		}
+
+		eternal_navy_2 = {
+			name = eternal_navy
+			
+			picture = eternal_navy
+			
+			allowed = {
+				tag = SIC
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				experience_gain_navy = 0.06
+				navy_chief_cost_factor = -0.2
+				navy_screen_attack_factor	= 0.30
+				screening_efficiency = 0.30
+			}
+		}
+		
+		antiespadarte = { #Anti-Espadarte Smear Campaign
+			picture = broken_resistance
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.25
+				fascism_drift = -0.04
+			}
+		}
+
+		faith_harmony = {
+			picture = EQS_harmonic_stagnation3
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = {
+				democratic_drift = 0.04
+				communism_drift = -0.02
+				fascism_drift = -0.02
+				drift_defence_factor = 0.15
+				army_core_defence_factor = 0.15
+			}
+		}
+
+		unifying_nation = {
+			picture = generic_pp_unity_bonus
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = -0.15
+				conscription = 0.015
+			}
+		}
+
+		duke_of_the_people = {
+			picture = duke_of_the_people
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.05
+				army_core_defence_factor = 0.1
+				war_support_factor = 0.05
+			}
+		}
+		
+		brodfeld_diaspora = {
+			picture = brodfeld_diaspora
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = { 
+				conscription = 0.015
+			}
+		}
+		
+		idealism_above_all_1 = {
+			picture = FRA_scw_intervention_nationalists_focus
+			name = idealism_above_all
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = { 
+				political_power_gain = 0.1
+				drift_defence_factor = 0.1
+				justify_war_goal_time = -0.15
+			}
+		}
+
+		idealism_above_all_2 = {
+			picture = FRA_scw_intervention_nationalists_focus
+			name = idealism_above_all
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = { 
+				political_power_gain = 0.2
+				drift_defence_factor = 0.2
+				justify_war_goal_time = -0.3
+			}
+		}
+
+		idealism_above_all_3 = {
+			picture = FRA_scw_intervention_nationalists_focus
+			name = idealism_above_all
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = { 
+				political_power_gain = 0.3
+				drift_defence_factor = 0.3
+				justify_war_goal_time = -0.45
+			}
+		}
+		
+		SIC_reshuffle_budget = {
+			picture = SOV_third_five_year_plan_civilian
+			name = reshuffle_budget
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = { 
+				consumer_goods_factor = -0.025
+			}
+		}
+		
+		SIC_harmony_for_griffonia = {
+			picture = EQS_harmonic_stagnation3
+			name = harmony_for_griffonia
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = { 
+				stability_factor = 0.05
+				democratic_drift = 0.01
+			}
+		}
+		
+		SIC_new_legion = {
+			picture = WNG_B_legion
+			name = new_legion
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = { 
+				army_morale = 10
+				army_speed_factor = 0.1
+			}
+		}
+		
+		SIC_empire_of_many_tongues = {
+			picture = WNG_political_deadlock
+			name = empire_of_many_tongues
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = { 
+				production_speed_buildings_factor = 0.05
+				conscription = 0.003
+			}
+		}
+
+		SIC_empire_of_many_tongues_1 = {
+			picture = WNG_political_deadlock
+			name = empire_of_many_tongues
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = { 
+				production_speed_buildings_factor = 0.075
+				conscription = 0.005
+			}
+		}
+		
+		decentralized_administration = {
+			picture = generic_democratic_opposition
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = { 
+				stability_factor = -0.1
+				army_core_defence_factor = 0.05
+				democratic_drift  = 0.03
+			}
+		}
+		
+		harmony_with_enlightened_characteristics = {
+			picture = CES_uphold_harmony
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = { 
+				conscription = 0.025
+				army_defence_factor = 0.1
+				army_attack_factor = 0.1
+			}
+		}
+		
+		tactical_reorganization_efforts = {
+			picture = MEX_politicised_army
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = { 
+				conscription = 0.005
+				experience_gain_army = 0.1
+			}
+		}
+		
+		defensive_tactical_approach = {
+			picture = ast_volunteer_defence_corps
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = { 
+				conscription = 0.01
+				experience_gain_army = 0.1
+				army_defence_factor = 0.1
+			}
+		}
+
+		offensive_tactical_approach = {
+			picture = ast_volunteer_defence_corps
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = { 
+				conscription = 0.01
+				experience_gain_army = 0.1
+				army_attack_factor = 0.1
+			}
+		}
+		
+		riverland_funds = {
+			picture = Generic_bank_idea_icon
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = { 
+				consumer_goods_factor = -0.1
+			}
+		}
+	
+		####FRD LIMITED
+		
+		SIC_FRD_imperial_legitimacy_1 = {
+			picture = SIC_legitimacy_pathetic
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.20
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				conscription_factor = -0.2
+				surrender_limit = -0.1
+				resistance_growth = 0.2
+			}
+		}
+	
+		SIC_FRD_imperial_legitimacy_2 = {
+			picture = SIC_legitimacy_low
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.05
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				conscription_factor = -0.1
+				surrender_limit = -0.05
+				resistance_growth = 0.1
+			}
+		}
+
+		SIC_FRD_imperial_legitimacy_3 = {
+			picture = SIC_legitimacy_good
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				conscription_factor = 0.05
+				surrender_limit = 0.1
+				resistance_growth = -0.1
+			}
+		}
+
+		SIC_FRD_imperial_legitimacy_4 = {
+			picture = SIC_legitimacy_great
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.25
+				stability_factor = 0.15
+				war_support_factor = 0.15
+				conscription_factor = 0.2
+				surrender_limit = 0.2
+				resistance_growth = -0.25
+			}
+		}
+		
+		SIC_FRD_war_with_criminals = {
+			picture = SIC_war_with_criminals
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.09
+				stability_factor = -0.05
+				war_support_factor = -0.05
+			}
+		}
+		
+		SIC_FRD_law_of_boreas = {
+			picture = idol_of_boreas_lost
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				democratic_drift = -0.05
+				stability_factor = 0.1
+			}
+		}
+		
+		SIC_FRD_pirates_of_the_duke = {
+			picture = MNC_bandits_black_market
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				stability_factor = -0.10
+				min_export = -0.2
+			}
+		}
+		
+		SIC_FRD_republican_tension = {
+			name = republican_tension
+			picture = republican_tension
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.20
+				democratic_drift = 0.05
+				communism_drift = 0.05
+			}
+		}	
+
+		SIC_FRD_autonomous_countryside = {
+			picture = SIC_autonomous_countryside
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				political_power_factor = -0.1
+				industrial_capacity_factory = -0.1
+			}
+		}
+		
+		SIC_FRD_sway_the_religious = {
+			picture = new_religious_mythos
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.01
+			}
+		}
+		
+		SIC_FRD_empress_consort = {
+			picture = SIC_empress_consort
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = {
+				compliance_gain = 0.02
+				political_power_factor = 0.1
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		
+		SIC_FRD_spoils_of_aster = {
+			picture = SIC_spoils_of_aster
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.025
+			}
+		}
+
+		SIC_FRD_karthinian_wealth = {
+			picture = SIC_karthinian_wealth
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		SIC_FRD_astida = {
+			picture = RUS_planning_school
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			targeted_modifier = {
+				tag = MIT
+				attack_bonus_against = 0.1
+			}
+		}
+		
+		SIC_FRD_falatkida = {
+			picture = RUS_planning_school
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			targeted_modifier = {
+				tag = FAL
+				attack_bonus_against = 0.1
+			}
+		}
+		
+		SIC_FRD_ordcmnida = {
+			picture = SIC_in_need_of_order
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+			}
+		}
+		
+		SIC_FRD_mntbltida = {
+			picture = SIC_planned_invasion
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = {
+				army_speed_factor = 0.15
+			}
+		}
+		
+		SIC_FRD_anttnktctida = {
+			picture = SIC_anti_tank
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			equipment_bonus = {
+				anti_tank = {
+					build_cost_ic = -0.15 instant = yes
+					reliability = 0.05
+				}
+			}
+		}
+		
+		SIC_FRD_fast_fast_fast = {
+			picture = SIC_fast_fast_fast
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = {
+				planning_speed = 0.5
+				army_speed_factor = 0.15
+				breakthrough_factor = 0.1
+			}
+		}	
+		
+		SIC_FRD_atkwng = {
+			picture = SIC_planned_invasion
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				army_attack_factor = 0.1
+			}
+		}
+		
+		SIC_FRD_warindida = {
+			picture = IRE_medium_industry
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_arms_factory_factor = 0.15
+			}
+		}
+		
+		SIC_FRD_invasion_preparations = {
+			picture = SIC_invasion
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = {
+				amphibious_invasion = 0.3
+				amphibious_invasion_defence = 0.2
+			}
+		}
+		
+		####COM LIMITED
+		
+		SIC_COM_divided_party = {
+			#picture = placeholder
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = {
+				stability_weekly = -0.01
+				stability_factor = -0.1
+				political_power_gain = -0.5
+			}
+		}
+		
+		SIC_COM_religious_question = {
+			#picture = placeholder
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.1
+				stability_weekly = -0.001
+			}
+		}
+		SIC_COM_religion_allowed = {
+			#picture = placeholder
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = -0.1
+			}
+		}
+		SIC_COM_religion_squashed = {
+			#picture = placeholder
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = 0.1
+			}
+		}
+		
+		SIC_COM_dissidence_question = {
+			#picture = placeholder
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.25
+				stability_weekly = -0.001
+			}
+		}
+		SIC_COM_political_freedoms = {
+			#picture = placeholder
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.25
+				stability_factor = -0.05
+			}
+		}
+		SIC_COM_political_uniformity = {
+			#picture = placeholder
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = 0.1
+			}
+		}
+		
+		SIC_COM_agr_frmfoc = {
+			#picture = placeholder
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = {
+				monthly_population = 0.2
+				consumer_goods_factor = 0.05
+				research_speed_factor = -0.06
+			}
+		}
+		SIC_COM_agr_frmfoc2 = {
+			#picture = placeholder
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = {
+				monthly_population = 0.4
+				consumer_goods_factor = 0.08
+				research_speed_factor = -0.1
+			}
+		}
+		SIC_COM_agr_frmfoc3 = {
+			#picture = placeholder
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = {
+				monthly_population = 0.6
+				consumer_goods_factor = 0.1
+				research_speed_factor = -0.12
+			}
+		}
+		
+		SIC_COM_syn_ctyfoc = {
+			#picture = placeholder
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				global_building_slots_factor = 0.1
+				consumer_goods_factor = 0.1
+				conscription_factor = -0.08
+			}
+		}
+		SIC_COM_syn_ctyfoc2 = {
+			#picture = placeholder
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				global_building_slots_factor = 0.25
+				consumer_goods_factor = 0.12
+				conscription_factor = -0.1
+			}
+		}
+		SIC_COM_syn_ctyfoc3 = {
+			#picture = placeholder
+			allowed = {
+				tag = SIC
+			}
+			removal_cost = -1
+			modifier = {
+				monthly_population = 0.1
+				production_speed_buildings_factor = 0.2
+				global_building_slots_factor = 0.4
+				consumer_goods_factor = 0.15
+				conscription_factor = -0.12
+			}
+		}
+	}
+	
+	country = {
+	
+		SIC_sic_representative_office = {
+			name = SIC_sic_representative_office
+			
+			picture = SIC_sic_representative_office
+			
+			allowed = {
+				tag = NZC
+				SIC = { exists = yes }
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				
+			}
+		}
+
+		SIC_wng_representative_office = {
+			name = SIC_wng_representative_office
+			
+			picture = SIC_wng_representative_office
+			
+			allowed = {
+				tag = NZC
+				WNG = { exists = yes }
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				
+			}
+		}
+
+		SIC_fal_representative_office = {
+			name = SIC_fal_representative_office
+			
+			picture = SIC_fal_representative_office
+			
+			allowed = {
+				tag = NZC
+				FAL = { exists = yes }
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				
+			}
+		}
+
+		SIC_cya_representative_office = {
+			name = SIC_cya_representative_office
+			
+			picture = SIC_cya_representative_office
+			
+			allowed = {
+				tag = NZC
+				CYA = { exists = yes }
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				
+			}
+		}
+
+		SIC_gru_representative_office = {
+			name = SIC_gru_representative_office
+			
+			picture = SIC_gru_representative_office
+			
+			allowed = {
+				tag = NZC
+				GRU = { exists = yes }
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				
+			}
+		}
+
+	}
+####ADVISORS, THEORISTS AND CONCERNS
+
+	political_advisor = {
+	
+		BRF_Enrico = {
+			allowed = {
+				original_tag = SIC
+			}
+			available = {
+				has_completed_focus = SIC_intelligentsia
+			}
+			visible = {
+				NOT = {
+					has_completed_focus = SIC_intelligentsia
+				}
+			}
+			ai_will_do = {
+				factor = 40
+			}
+			traits = { compassionate_gentleman }
+		}
+	}
+	
+##################MANPOWER##################
+	
+	mobilization_laws = {
+		law = yes
+		
+		workers_and_peasants_red_army = {
+			picture = workers_and_peasants_red_army
+			level = 6
+            removal_cost = -1
+            allowed = { always = no }
+            cancel_if_invalid = no
+            available = {
+                always = yes
+            }
+
+            modifier = {
+                conscription = 0.07
+                training_time_factor = 0.15
+				mobilization_speed = 0.25
+            }
+
+            allowed_to_remove = {
+                always = no
+            }
+		}
+	}
+}

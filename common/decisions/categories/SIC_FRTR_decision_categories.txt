@@ -1,0 +1,105 @@
+SIC_anti_piracy = {
+	icon = border_war
+    priority = {
+        base = 100
+    }
+    allowed = {
+        original_tag = SIC
+    }
+    visible = {
+		OR = {
+        	has_completed_focus = SIC_piracy
+			has_completed_focus = SIC_anticorruption
+			has_completed_focus = SIC_combat_crime_with_extreme_prejudice
+			has_completed_focus = SIC_all_is_well
+		}
+    }
+}
+SIC_spawn_insurgencies = {
+	icon = GFX_decision_category_form_prywhen_category
+    priority = {
+        base = 100
+    }
+    allowed = {
+        original_tag = SIC
+    }
+    visible = {
+        has_completed_focus = SIC_organise_insurgencies
+    }
+}
+
+SIC_FRD_southern_economy = {
+    icon = GFX_decision_category_generic_industry
+    priority = {
+        base = 100
+    }
+    allowed = {
+        original_tag = SIC
+    }
+    visible = {
+        has_completed_focus = SIC_FRD_the_southern_economy
+    }
+}
+SIC_FRD_southern_army = {
+    icon = GFX_decision_category_army_reform
+    priority = {
+        base = 100
+    }
+    allowed = {
+        original_tag = SIC
+    }
+    visible = {
+        has_completed_focus = SIC_FRD_the_southern_military
+    }
+}
+SIC_FRD_southern_navy = {
+    icon = GFX_decision_category_MTG_naval_treaties
+    priority = {
+        base = 100
+    }
+    allowed = {
+        original_tag = SIC
+    }
+    visible = {
+        has_completed_focus = SIC_FRD_newshp
+    }
+}
+SIC_FRD_southern_will = {
+    icon = GFX_decision_category_river_federation
+    priority = {
+        base = 100
+    }
+    allowed = {
+        original_tag = SIC
+    }
+    visible = {
+        has_completed_focus = SIC_FRD_the_southern_will
+    }
+}
+
+
+SIC_com_foreign_diplomacy = {
+    icon = GFX_decision_category_generic_communism
+    priority = {
+        base = 100
+    }
+    allowed = {
+        original_tag = SIC
+    }
+    visible = {
+        has_completed_focus = SIC_communist_foreign_policy
+    }
+}
+
+SIC_com_enlisted = {
+    icon = GFX_decision_category_generic_communism
+    priority = {
+        base = 100
+    }
+    allowed = {
+        original_tag = SIC
+    }
+    visible = {
+        has_completed_focus = SIC_communist_foreign_policy
+    }
+}

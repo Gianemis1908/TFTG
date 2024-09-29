@@ -1,0 +1,141 @@
+ideas = {
+	country = {
+		LCT_red_river_army_idea = {
+			picture = MEX_revolutionary_army
+			available = {
+        		tag = LCT
+				has_government = communism
+			}
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			modifier = {
+				conscription = 0.02
+				planning_speed = 0.25
+				army_attack_factor = 0.1
+			}
+		}
+	}
+	country = {
+		LCT_stalliongrad_cooperation = {
+			picture = WNG_COM_const
+			available = {
+      			tag = LCT
+				has_government = communism
+				STG = { exists = yes }
+			}
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			modifier = {
+				army_armor_attack_factor = 0.1
+				army_armor_speed_factor = 0.1
+				experience_gain_army = 0.05
+			}
+		}
+	}
+	country = {
+		LCT_war_communism = {
+			picture = BAL_peoples_army
+			available = {
+      			tag = LCT
+				has_government = communism
+				STG = { exists = yes }
+			}
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			modifier = {
+				production_speed_arms_factory_factor = 0.25
+				production_factory_max_efficiency_factor = 0.2
+				stability_factor = -0.075
+			}
+		}
+	}
+	country = {
+		LCT_C_a_red_army = {
+
+			picture = trotskyite_plot_purged
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			available = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.25
+				stability_factor = 0.1
+				war_support_factor = 0.3
+				army_morale_factor = 0.1
+				army_org_factor = 0.05
+				communism_drift = 0.03
+			}
+		}
+		
+		LCT_C_market_socialism = {
+
+			picture = SOV_fourth_five_year_plan
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			available = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = 0.10
+				production_speed_arms_factory_factor = 0.025
+			}
+		}
+		
+		LCT_C_nationalized_guilds = {
+
+			picture = EQS_UESR_communism
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			available = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_cost = -0.25
+				trade_laws_cost_factor = -0.25
+				economy_cost_factor = -0.25
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+	}
+
+}

@@ -1,0 +1,27 @@
+﻿l_english:
+
+### Names ###
+NZC_Commerce_Raider:0 "Commerce Raider"
+NZC_pirate_parrot_1:0 "Jack Morrow"
+NZC_pirate_parrot_2:0 "Small Beak"
+NZC_pirate_parrot_3:0 "Red Feather"
+NZC_pirate_parrot_4:0 "Miguel Promto"
+NZC_pirate_parrot_5:0 "Black Beard"
+NZC_pirate_parrot_6:0 "Hose Clawian"
+
+### Parties ###
+NZC_neutrality_party:0 "UCoMoStwtNZ"
+NZC_neutrality_party_long:0 "United Company of Merchants of Sicameon trading with the North Zebrica"
+NZC_communism_party:0 "UCoMoFRtwtWZ"
+NZC_communism_party_long:0 "United Company of Merchants of Sicameon trading with the North Zebrica"
+NZC_democratic_party:0 "UCoMoStwtNZ"
+NZC_democratic_party_long:0 "United Company of Merchants of Sicameon trading with the North Zebrica"
+NZC_fascism_party:0 "UCoMoStwtNZ"
+NZC_fascism_party_long:0 "United Company of Merchants of Sicameon trading with the North Zebrica"
+
+### Ideas ###
+SIC_sic_representative_office:0 "Sicameonese Representative Office"
+SIC_wng_representative_office:0 "Wingbardian Representative Office"
+SIC_fal_representative_office:0 "Falcorian Representative Office"
+SIC_cya_representative_office:0 "Cyanolisian Representative Office"
+SIC_gru_representative_office:0 "Gryphussian Representative Office"

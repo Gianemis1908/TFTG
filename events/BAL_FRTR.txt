@@ -1,0 +1,323 @@
+﻿add_namespace = baltimare_frtr
+
+country_event = { 
+	id = baltimare_frtr.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event baltimare_frtr.1"}
+	title = baltimare_frtr.1.t
+	desc = baltimare_frtr.1.d
+	picture = GFX_event_eqs_communists
+	is_triggered_only = yes
+	option = {
+		name = baltimare_frtr.1.a
+		add_field_marshal_role  = {
+			character = BAL_starlin_glimmer
+			traits={ pony_race_trait infantry_leader trickster }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=5559
+		}
+	}
+}
+
+country_event = {
+	id = baltimare_frtr.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event baltimare_frtr.2"}
+	title = baltimare_frtr.2.t
+	desc = baltimare_frtr.2.d
+	picture = GFX_event_eqs_communists
+	is_triggered_only = yes
+	option = {
+		name = baltimare_frtr.2.a
+		hidden_effect = {
+			country_event = { days = 100 id = baltimare_frtr.3 }
+		}
+	}
+}
+
+country_event = { 
+	id = baltimare_frtr.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event baltimare_frtr.3"}
+	title = baltimare_frtr.3.t
+	desc = baltimare_frtr.3.d
+	picture = GFX_event_eqs_communists
+	is_triggered_only = yes
+	option = {
+		name = baltimare_frtr.3.a
+		add_country_leader_role = {
+			character = BAL_starlin_glimmer
+			promote_leader = yes
+			country_leader = {
+				ideology = starlightism
+				expire = "1965.1.1.1"
+				traits = {  }
+			}
+		}
+		hidden_effect = {
+			country_event = { days = 0 id = baltimare_frtr.4 }
+			remove_ideas = NMS_native_resistance
+			remove_ideas = JUN_economic_backwater
+			remove_ideas = JUN_lunar_remnants
+		}
+	}
+	option = {
+		name = baltimare_frtr.3.b
+		remove_unit_leader = 5559
+	}
+}
+
+country_event = {
+	id = baltimare_frtr.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event baltimare_frtr.4"}
+	title = baltimare_frtr.4.t
+	desc = baltimare_frtr.4.d
+	picture = GFX_event_pony_march
+	is_triggered_only = yes
+	option = {
+		name = baltimare_frtr.4.a
+		load_focus_tree = { 
+			tree = baltimare_focus_3
+		}
+		set_cosmetic_tag = BAL_starlin
+	}
+}
+
+country_event = {
+	id = baltimare_frtr.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event baltimare_frtr.5"}
+	title = baltimare_frtr.5.t
+	desc = baltimare_frtr.5.d
+	picture = GFX_event_pony_march
+	is_triggered_only = yes
+	option = {
+		name = baltimare_frtr.5.a
+		add_country_leader_role = {
+			character = BAL_starlin_glimmer
+			promote_leader = yes
+			country_leader = {
+				ideology = harmonic_socialism
+				expire = "1965.1.1.1"
+				traits = {  }
+			}
+		}
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+		}
+	}
+}
+
+country_event = {
+	id = baltimare_frtr.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event baltimare_frtr.6"}
+	title = baltimare_frtr.6.t
+	desc = baltimare_frtr.6.d
+	picture = GFX_event_pony_march
+	is_triggered_only = yes
+	option = {
+		name = baltimare_frtr.6.a
+		add_country_leader_role = {
+			character = BAL_twilight_sparkle
+			promote_leader = yes
+			country_leader = {
+				ideology = harmonic_socialism
+				expire = "1965.1.1.1"
+				traits = {  }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = baltimare_frtr.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event baltimare_frtr.7"}
+	title = baltimare_frtr.7.t
+	desc = baltimare_frtr.7.d
+	picture = GFX_event_pony_march
+	is_triggered_only = yes
+	option = {
+		name = baltimare_frtr.7.a
+		
+	}
+}
+
+country_event = {
+	id = baltimare_frtr.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event baltimare_frtr.8"}
+	title = baltimare_frtr.8.t
+	desc = baltimare_frtr.8.d
+	picture = GFX_event_pony_march
+	is_triggered_only = yes
+	option = {
+		name = baltimare_frtr.8.a
+		add_opinion_modifier = {
+			target = STG
+			modifier = large_decrease
+		}
+		STG = {
+			add_opinion_modifier = {
+				target = SIC
+				modifier = large_decrease
+			}
+		}
+	}
+}
+
+country_event = {
+	id = baltimare_frtr.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event baltimare_frtr.9"}
+	title = baltimare_frtr.9.t
+	desc = baltimare_frtr.9.d
+	picture = GFX_event_pony_march
+	is_triggered_only = yes
+	option = {
+		name = baltimare_frtr.9.a
+		BAL = { country_event = { days = 1 id = baltimare_frtr.10 } }
+	}
+	option = {
+		name = baltimare_frtr.9.b
+		BAL = { country_event = { days = 1 id = baltimare_frtr.11 } }
+	}
+}
+
+country_event = {
+	id = baltimare_frtr.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event baltimare_frtr.10"}
+	title = baltimare_frtr.10.t
+	desc = baltimare_frtr.10.d
+	picture = GFX_event_pony_march
+	is_triggered_only = yes
+	option = {
+		name = baltimare_frtr.10.a
+		annex_country = {
+		    target = VAN
+		    transfer_troops = yes
+		}
+		every_state = { limit = { is_core_of = VAN } add_core_of = BAL }
+	}
+}
+
+country_event = {
+	id = baltimare_frtr.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event baltimare_frtr.11"}
+	title = baltimare_frtr.11.t
+	desc = baltimare_frtr.11.d
+	picture = GFX_event_pony_march
+	is_triggered_only = yes
+	option = {
+		name = baltimare_frtr.11.a
+		create_wargoal= {
+			type = annex_everything 
+			target = VAN
+		}
+		VAN = { add_to_ROOT_potential_cores = yes }
+	}
+}
+
+country_event = {
+	id = baltimare_frtr.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event baltimare_frtr.12"}
+	title = baltimare_frtr.12.t
+	desc = baltimare_frtr.12.d
+	picture = GFX_event_pony_march
+	is_triggered_only = yes
+	option = {
+		name = baltimare_frtr.12.a
+		add_stability = 0.15
+	}
+	option = {
+		name = baltimare_frtr.12.b
+		add_war_support = 0.15
+	}
+	option = {
+		name = baltimare_frtr.12.c
+		add_stability = 0.05
+		add_war_support = 0.05
+	}
+}
+
+country_event = {
+	id = baltimare_frtr.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event baltimare_frtr.13"}
+	title = baltimare_frtr.13.t
+	desc = baltimare_frtr.13.d
+	picture = GFX_event_pony_march
+	is_triggered_only = yes
+	option = {
+		name = baltimare_frtr.13.a
+		add_stability = 0.1
+	}
+}
+
+country_event = {
+	id = baltimare_frtr.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event baltimare_frtr.14"}
+	title = baltimare_frtr.14.t
+	desc = baltimare_frtr.14.d
+	picture = GFX_event_pony_march
+	is_triggered_only = yes
+	option = {
+		name = baltimare_frtr.14.a
+		release = CHN
+		CHN = { set_country_flag = demilitarized }
+		puppet = CHN
+		add_political_power = -100
+	}
+	option = {
+		name = baltimare_frtr.14.b
+		add_political_power = 100
+	}
+}
+
+country_event = {
+	id = baltimare_frtr.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event baltimare_frtr.15"}
+	title = baltimare_frtr.15.t
+	desc = baltimare_frtr.15.d
+	picture = GFX_event_pony_march
+	is_triggered_only = yes
+	option = {
+		name = baltimare_frtr.15.a
+		BAL = { country_event = { days = 1 id = baltimare_frtr.16 } }
+	}
+	option = {
+		name = baltimare_frtr.15.b
+		BAL = { country_event = { days = 1 id = baltimare_frtr.17 } }
+	}
+}
+
+country_event = {
+	id = baltimare_frtr.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event baltimare_frtr.16"}
+	title = baltimare_frtr.16.t
+	desc = baltimare_frtr.16.d
+	picture = GFX_event_pony_march
+	is_triggered_only = yes
+	option = {
+		name = baltimare_frtr.16.a
+		annex_country = {
+		    target = CRY
+		    transfer_troops = yes
+		}
+		every_state = { limit = { is_core_of = CRY } add_core_of = BAL }
+	}
+}
+
+country_event = {
+	id = baltimare_frtr.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event baltimare_frtr.17"}
+	title = baltimare_frtr.17.t
+	desc = baltimare_frtr.17.d
+	picture = GFX_event_pony_march
+	is_triggered_only = yes
+	option = {
+		name = baltimare_frtr.17.b
+		create_wargoal= {
+			type = annex_everything 
+			target = CRY
+		}
+		CRY = { add_to_ROOT_potential_cores = yes }
+	}
+}

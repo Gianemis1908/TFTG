@@ -1,0 +1,48 @@
+division_template = {
+	name = "Insurgency"			
+	division_names_group = SIC_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 4 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+	priority = 0
+}
+
+units = {
+	division = {
+		name = "Brodfeldian insurgency"
+		location = 4504
+		division_template = "Insurgency"
+		start_experience_factor = 0.3 }
+	division = {
+		name = "Brodfeldian insurgency"
+		location = 12232
+		division_template = "Insurgency"
+		start_experience_factor = 0.3 }
+	division = {
+		name = "Kivessinian insurgency"
+		location = 12017
+		division_template = "Insurgency"
+		start_experience_factor = 0.3 }
+	division = {
+		name = "Kivessinian insurgency"
+		location = 12378
+		division_template = "Insurgency"
+		start_experience_factor = 0.3 }
+	division = {
+		name = "Sydian insurgency"
+		location = 10207
+		division_template = "Insurgency"
+		start_experience_factor = 0.3 }
+	division = {
+		name = "Sydian insurgency"
+		location = 4405
+		division_template = "Insurgency"
+		start_experience_factor = 0.3 }
+}

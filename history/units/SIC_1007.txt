@@ -1,0 +1,307 @@
+﻿division_template = {
+	name = "Brigada de la Milicia Guarnición"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+
+	support = {
+		military_police = { x = 0 y = 0 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "Brigada de la Milicia Campesina"
+	division_names_group = SIC_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+	}
+
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Brigada de la Sicameon Legión"
+	division_names_group = SIC_INF_02
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Brigada Vanguardia Centinela"
+	division_names_group = SIC_ELI_01
+	regiments = {
+		knights = { x = 0 y = 0 }
+		knights = { x = 0 y = 1 }
+		knights = { x = 1 y = 0 }
+		knights = { x = 1 y = 1 }
+		knights = { x = 2 y = 0 }
+		knights = { x = 2 y = 1 }
+	}
+
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+	
+	priority = 2
+}
+division_template = {
+	name = "Brigada de Marinas"			
+	division_names_group = SIC_MAR_01
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+	}
+
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Brigada de Montañeros"
+	division_names_group = SIC_MON_01
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+	support = { 
+		artillery = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Brigada de Blindado"
+	division_names_group = SIC_ARM_01
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+	}
+	support = { 
+		mot_recon = { x = 0 y = 0 }
+	}
+}
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10195
+		division_template = "Brigada de la Milicia Campesina"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 8011
+		division_template = "Brigada de la Milicia Campesina"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 6918
+		division_template = "Brigada de la Milicia Campesina"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 12292
+		division_template = "Brigada de la Milicia Campesina"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9 
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 9991
+		division_template = "Brigada de la Sicameon Legión"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 7645
+		division_template = "Brigada de la Sicameon Legión"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7399
+		division_template = "Brigada de Montañeros"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 4075
+		division_template = "Brigada de Montañeros"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1248
+		division_template = "Brigada de la Sicameon Legión"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 6963
+		division_template = "Brigada de la Milicia Campesina"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 10438
+		division_template = "Brigada de la Milicia Campesina"
+		start_experience_factor = 0.3 
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Agrupación de Infantería de Marina de Midoria"
+		location = 12180
+		division_template = "Brigada de Marinas"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Agrupación de Infantería de Marina de Queruscos"
+		location = 7645
+		division_template = "Brigada de Marinas"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Brigada de Blindadas de la Sicameon Legión"
+		location = 7591
+		division_template = "Brigada de Blindado"
+		start_experience_factor = 0.3
+	}
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "SIC"
+		}
+		requested_factories = 1
+		progress = 0.12
+		efficiency = 75
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "SIC"
+		}
+		requested_factories = 1
+		progress = 0.96
+		efficiency = 45
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "SIC"
+		}
+		requested_factories = 1
+		progress = 0.85
+		efficiency = 20
+	}
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "SIC"
+		}
+		requested_factories = 1
+		progress = 0.95
+		efficiency = 60
+	}
+	add_equipment_production = {
+		equipment = {
+			type = medium_tank_chassis_1
+			creator = "SIC"
+			version_name = "Gravelines"
+		}
+		requested_factories = 1
+		progress = 0.95
+		efficiency = 60
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_heavy_1
+			creator = "SIC" 
+			version_name = "Emperador Class"
+		}
+		name = "ANS Emperador Grover II"
+		requested_factories = 5
+		progress = 0.98
+		amount = 1
+	}
+}

@@ -1,0 +1,1364 @@
+add_namespace = sicameon_frtr
+country_event = {
+	id = sicameon_frtr.1
+	title = sicameon_frtr.1.t
+	desc = sicameon_frtr.1.d
+	picture = GFX_event_griffon_back
+	option = {
+		name = sicameon_frtr.1.a
+	}
+	is_triggered_only = yes
+}
+country_event = {
+	id = sicameon_frtr.2
+	title = sicameon_frtr.2.t
+	desc = sicameon_frtr.2.d
+	picture = GFX_event_griffon_back 
+	option = {
+		name = sicameon_frtr.2.a
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sicameon_frtr.1"}
+	title = sicameon_frtr.3.t
+	desc = sicameon_frtr.3.d
+	picture = GFX_event_griffon_back 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sicameon_frtr.3.a
+		ai_chance = {
+			factor = 33
+		}
+		complete_national_focus = SIC_a_phantom_from_the_past 
+			add_country_leader_role = {
+				character = SIC_Frederick
+				promote_leader = yes
+				country_leader = {
+					ideology = despotism
+					expire = "1965.1.1.1"
+					traits = {  }
+				}
+			}
+		set_party_name= {
+			ideology = neutrality
+			long_name = SIC_fred_kings_party_long
+			name = SIC_fred_kings_party
+		}
+	}
+	option = {
+		name = sicameon_frtr.3.b
+		ai_chance = {
+			factor = 34
+		}
+		complete_national_focus = SIC_an_heir_in_exile
+			add_country_leader_role = {
+				character = SIC_Tomado
+				promote_leader = yes
+				country_leader = {
+					ideology = conservatism
+					expire = "1965.1.1.1"
+					traits = {  }
+				}
+			}
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+		}
+		set_party_name= {
+			ideology = democratic
+			long_name = SIC_tom_kings_party_long
+			name = SIC_tom_kings_party
+		}
+		hidden_effect = {
+			set_cosmetic_tag = SIC_tomado_the_king
+		}
+	}
+	option = {
+		name = sicameon_frtr.3.c
+		ai_chance = {
+			factor = 33
+		}
+		complete_national_focus = SIC_springtime_sic
+			add_country_leader_role = {
+				character = SIC_Petronilo
+				promote_leader = yes
+				country_leader = {
+					ideology = rexism
+					expire = "1965.1.1.1"
+					traits = {  }
+				}
+			}
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+		set_party_name= {
+			ideology = fascism
+			long_name = SIC_petr_fash_party_long
+			name = SIC_petr_fash_party
+		}
+		hidden_effect = {
+			set_cosmetic_tag = SIC_tomado_the_king
+		}
+	}
+
+}
+
+country_event = {
+	id = sicameon_frtr.4
+	title = sicameon_frtr.4.t
+	desc = sicameon_frtr.4.d
+	picture = GFX_event_griffon_back 
+	option = {
+		name = sicameon_frtr.4.a
+		
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr.5
+	title = sicameon_frtr.5.t
+	desc = sicameon_frtr.5.d
+	picture = GFX_event_griffon_back 
+	option = {
+		name = sicameon_frtr.5.a
+		ai_chance = {
+			factor = 30
+		}
+		SIC = {
+			country_event= { days = 1 id = sicameon_frtr.6 }
+		}
+	}
+	option = {
+		name = sicameon_frtr.5.b
+		ai_chance = {
+			factor = 70
+		}
+		SIC = {
+			country_event= { days = 1 id = sicameon_frtr.7 }
+		}
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr.6
+	title = sicameon_frtr.6.t
+	desc = sicameon_frtr.6.d
+	picture = GFX_event_griffon_back 
+	option = {
+		name = sicameon_frtr.6.a
+		SIC = {
+			transfer_state = 514
+			add_state_core = 514
+			transfer_state = 512
+			add_state_core = 512
+			transfer_state = 594
+			add_state_core = 594
+		}
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr.7
+	title = sicameon_frtr.7.t
+	desc = sicameon_frtr.7.d
+	picture = GFX_event_griffon_back 
+	option = {
+		name = sicameon_frtr.7.a
+		
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr.8
+	title = sicameon_frtr.8.t
+	desc = sicameon_frtr.8.d
+	picture = GFX_event_griffon_back 
+	option = {
+		name = sicameon_frtr.8.a
+		ai_chance = {
+			factor = 80
+		}
+		SIC = {
+			country_event= { days = 1 id = sicameon_frtr.9 }
+		}
+	}
+	option = {
+		name = sicameon_frtr.5.b
+		ai_chance = {
+			factor = 20
+		}
+		SIC = {
+			country_event= { days = 1 id = sicameon_frtr.10 }
+		}
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr.9
+	title = sicameon_frtr.9.t
+	desc = sicameon_frtr.9.d
+	picture = GFX_event_griffon_back 
+	option = {
+		name = sicameon_frtr.9.a
+		WNG = {
+			add_to_faction = SIC
+		}
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr.10
+	title = sicameon_frtr.10.t
+	desc = sicameon_frtr.10.d
+	picture = GFX_event_griffon_back 
+	option = {
+		name = sicameon_frtr.10.a
+		
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr.11
+	title = sicameon_frtr.11.t
+	desc = sicameon_frtr.11.d
+	picture = GFX_event_griffon_back 
+	option = {
+		name = sicameon_frtr.11.a
+		ai_chance = {
+			factor = 50
+		}
+		give_guarantee = SIC
+		SIC = {
+			country_event= { days = 1 id = sicameon_frtr.12 }
+		}
+	}
+	option = {
+		name = sicameon_frtr.11.b
+		ai_chance = {
+			factor = 50
+		}
+		SIC = {
+			country_event= { days = 1 id = sicameon_frtr.13 }
+		}
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr.12
+	title = sicameon_frtr.12.t
+	desc = sicameon_frtr.12.d
+	picture = GFX_event_griffon_back 
+	option = {
+		name = sicameon_frtr.12.a
+		give_guarantee = EQC
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr.13
+	title = sicameon_frtr.13.t
+	desc = sicameon_frtr.13.d
+	picture = GFX_event_griffon_back 
+	option = {
+		name = sicameon_frtr.13.a
+		
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr.14
+	title = sicameon_frtr.14.t
+	desc = sicameon_frtr.14.d
+	picture = GFX_event_griffon_back 
+	option = {
+		name = sicameon_frtr.14.a
+		
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr.15
+	title = sicameon_frtr.15.t
+	desc = sicameon_frtr.15.d
+	picture = GFX_event_griffon_back 
+	option = {
+		name = sicameon_frtr.15.a
+		add_popularity= { 
+			ideology = fascism 
+			popularity = 0.025
+		}
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr.16
+	title = sicameon_frtr.16.t
+	desc = sicameon_frtr.16.d
+	picture = GFX_event_griffon_back 
+	option = {
+		name = sicameon_frtr.16.a
+		set_country_flag = SIC_monarch_elected
+		ai_chance = {
+			factor = 98
+		}
+	}
+	option = {
+		name = sicameon_frtr.16.b
+		set_country_flag = SIC_domestic_enemies
+		ai_chance = {
+			factor = 2
+		}
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sicameon_frtr.17"}
+	title = sicameon_frtr.17.t
+	desc = sicameon_frtr.17.d
+	picture = GFX_event_feast
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	option = { #Democrats
+		name = sicameon_frtr.17.a
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+		}
+		set_country_flag = SIC_harmonic_victory
+		remove_ideas = republican_tension_2
+		ai_chance = {
+			factor = 35
+		}
+	}
+	
+	option = { #Syndies
+		name = sicameon_frtr.17.b
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+		set_country_flag = SIC_communist_victory
+		remove_ideas = republican_tension_2
+		ai_chance = {
+			factor = 40
+		}
+	}
+	
+	option = { #fascists
+		name = sicameon_frtr.17.c
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+		set_country_flag = SIC_fascist_victory
+		remove_ideas = republican_tension_2
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+country_event = {
+	id = sicameon_frtr.18
+	title = sicameon_frtr.18.t
+	desc = sicameon_frtr.18.d
+	picture = GFX_event_griffon_back 
+	option = {
+		name = sicameon_frtr.18.a
+		swap_ideas = {
+			remove_idea = swordfish_claws
+			add_idea = swordfish_claws_1
+		}
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr.19
+	title = sicameon_frtr.19.t
+	desc = sicameon_frtr.19.d
+	picture = GFX_event_griffon_back 
+	option = {
+		name = sicameon_frtr.19.a
+		add_political_power = -50
+		add_manpower = -8000
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr.20
+	title = sicameon_frtr.20.t
+	desc = sicameon_frtr.20.d
+	picture = GFX_event_griffon_back 
+	option = {
+		name = sicameon_frtr.20.a
+		ai_chance = {
+			factor = 50
+		}
+		add_political_power = 150
+	}
+	option = {
+		name = sicameon_frtr.20.b
+		ai_chance = {
+			factor = 50
+		}
+		BRF = {
+			BRF_Mason_Of_Kivessin = {
+				set_nationality = SIC
+			}
+			BRF_constanti_privezan = {
+				set_nationality = SIC
+			}
+			BRF_Ion_Soimescu = {
+				set_nationality = SIC
+			}
+		}
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr.21
+	title = sicameon_frtr.21.t
+	desc = sicameon_frtr.21.d
+	picture = GFX_event_griffon_back 
+	option = {
+		name = sicameon_frtr.21.a
+		ai_chance = {
+			factor = 50
+		}
+		add_political_power = 150
+	}
+	option = {
+		name = sicameon_frtr.21.b
+		ai_chance = {
+			factor = 50
+		}
+		GRW = {
+			GRW_rain_twister = {
+				set_nationality = SIC
+			}
+			GRW_witia_gryphon = {
+				set_nationality = SIC
+			}
+			GRW_koldvin = {
+				set_nationality = SIC
+			}
+		}
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr.22
+	title = sicameon_frtr.22.t
+	desc = sicameon_frtr.22.d
+	picture = GFX_event_griffon_back 
+	option = {
+		name = sicameon_frtr.22.a
+		add_political_power = 10
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr.23
+	title = sicameon_frtr.23.t
+	desc = sicameon_frtr.23.d
+	picture = GFX_event_griffon_back 
+	option = {
+		name = sicameon_frtr.23.a
+		add_political_power = 10
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr.24
+	title = sicameon_frtr.24.t
+	desc = sicameon_frtr.24.d
+	picture = GFX_event_griffon_back 
+	option = {
+		name = sicameon_frtr.24.a
+		add_political_power = 10
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr.25
+	title = sicameon_frtr.25.t
+	desc = sicameon_frtr.25.d
+	picture = GFX_event_griffon_back 
+	option = {
+		name = sicameon_frtr.25.a
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr.26
+	title = sicameon_frtr.26.t
+	desc = sicameon_frtr.26.d
+	picture = GFX_event_griffon_back 
+	option = {
+		name = sicameon_frtr.26.a
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr.27
+	title = sicameon_frtr.27.t
+	desc = sicameon_frtr.27.d
+	picture = GFX_event_griffon_back 
+	option = {
+		name = sicameon_frtr.27.a
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr.28
+	title = sicameon_frtr.28.t
+	desc = sicameon_frtr.28.d
+	picture = GFX_event_griffon_back 
+	option = {
+		name = sicameon_frtr.28.a
+		ai_chance = {
+			factor = 80
+		}
+		SIC = {
+			country_event= { days = 1 id = sicameon_frtr.29 }
+		}
+	}
+	option = {
+		name = sicameon_frtr.28.b
+		ai_chance = {
+			factor = 20
+		}
+		SIC = {
+			country_event= { days = 1 id = sicameon_frtr.30 }
+		}
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr.29
+	title = sicameon_frtr.29.t
+	desc = sicameon_frtr.29.d
+	picture = GFX_event_griffon_back 
+	option = {
+		name = sicameon_frtr.29.a
+		add_timed_idea = {
+			idea = riverland_funds
+			days = 180
+		}
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr.30
+	title = sicameon_frtr.30.t
+	desc = sicameon_frtr.30.d
+	picture = GFX_event_griffon_back 
+	option = {
+		name = sicameon_frtr.30.a
+	}
+	is_triggered_only = yes
+}
+
+###########################################################
+
+add_namespace = sicameon_frtr_frd
+country_event = {
+	id = sicameon_frtr_frd.1
+	title = sicameon_frtr_frd.1.t
+	desc = sicameon_frtr_frd.1.d
+	picture = GFX_event_griffon_back
+	option = {
+		name = sicameon_frtr_frd.1.a
+		load_oob = "SIC_mit_collaborationists"
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr_frd.2
+	title = sicameon_frtr_frd.2.t
+	desc = sicameon_frtr_frd.2.d
+	picture = GFX_event_griffon_back
+	option = {
+		name = sicameon_frtr_frd.2.a
+		add_political_power = 150
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr_frd.3
+	title = sicameon_frtr_frd.3.t
+	desc = sicameon_frtr_frd.3.d
+	picture = GFX_event_griffon_back
+	option = {
+		name = sicameon_frtr_frd.3.a
+		add_political_power = 50
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr_frd.4
+	title = sicameon_frtr_frd.4.t
+	desc = sicameon_frtr_frd.4.d
+	picture = GFX_event_griffon_back
+	option = {
+		name = sicameon_frtr_frd.4.a
+		set_cosmetic_tag = SIC_frederick_arantigos
+		hidden_effect = {
+			add_country_leader_role = {
+				character = SIC_Frederick_arantigos
+				promote_leader = yes
+				country_leader = {
+					ideology = despotism
+					expire = "1965.1.1.1"
+					traits = {  }
+				}
+			}
+		}
+		set_party_name= {
+			ideology = neutrality
+			long_name = SIC_fred_emperors_party_long
+			name = SIC_fred_emperors_party
+		}
+	}
+	is_triggered_only = yes
+}
+country_event = {
+	id = sicameon_frtr_frd.5
+	title = sicameon_frtr_frd.5.t
+	desc = sicameon_frtr_frd.5.d
+	picture = GFX_event_griffon_back
+	option = {
+		name = sicameon_frtr_frd.5.a
+		every_state = { limit = { is_owned_by = CYA } add_claim_by = SIC }
+		every_state = { limit = { is_owned_by = FAL } add_claim_by = SIC }
+		every_state = { limit = { is_owned_by = BAN } add_claim_by = SIC }
+		every_state = { limit = { is_owned_by = MIT } add_claim_by = SIC }
+		every_state = { limit = { is_owned_by = BOI } add_claim_by = SIC }
+		every_state = { limit = { is_owned_by = LAK } add_claim_by = SIC }
+		every_state = { limit = { is_owned_by = WNG } add_claim_by = SIC }
+		every_state = { limit = { is_owned_by = ARA } add_claim_by = SIC }
+		every_state = { limit = { is_owned_by = FRN } add_claim_by = SIC }
+		every_state = { limit = { is_owned_by = TAL } add_claim_by = SIC }
+	}
+	is_triggered_only = yes
+}
+country_event = {
+	id = sicameon_frtr_frd.6
+	title = sicameon_frtr_frd.6.t
+	desc = sicameon_frtr_frd.6.d
+	picture = GFX_event_griffon_back
+	option = {
+		name = sicameon_frtr_frd.6.a
+	}
+	is_triggered_only = yes
+}
+country_event = {
+	id = sicameon_frtr_frd.7
+	title = sicameon_frtr_frd.7.t
+	desc = sicameon_frtr_frd.7.d
+	picture = GFX_event_griffon_back
+	option = {
+		name = sicameon_frtr_frd.7.a
+	}
+	is_triggered_only = yes
+}
+country_event = {
+	id = sicameon_frtr_frd.8
+	title = sicameon_frtr_frd.8.t
+	desc = sicameon_frtr_frd.8.d
+	picture = GFX_event_griffon_back
+	option = {
+		name = sicameon_frtr_frd.8.a
+		SIC = {
+			country_event= { days = 1 id = sicameon_frtr_frd.9 }
+		}
+	}
+	option = {
+		name = sicameon_frtr_frd.8.b
+		SIC = {
+			country_event= { days = 1 id = sicameon_frtr_frd.10 }
+		}
+	}
+	is_triggered_only = yes
+}
+country_event = {
+	id = sicameon_frtr_frd.9
+	title = sicameon_frtr_frd.9.t
+	desc = sicameon_frtr_frd.9.d
+	picture = GFX_event_griffon_back
+	option = {
+		name = sicameon_frtr_frd.9.a
+		add_ideas = SIC_FRD_empress_consort
+	}
+	is_triggered_only = yes
+}
+country_event = {
+	id = sicameon_frtr_frd.10
+	title = sicameon_frtr_frd.10.t
+	desc = sicameon_frtr_frd.10.d
+	picture = GFX_event_griffon_back
+	option = {
+		name = sicameon_frtr_frd.10.a
+		declare_war_on = {
+			target = CYA
+			type = annex_everything
+		}
+		set_country_flag = SIC_declined
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr_frd.11
+	title = sicameon_frtr_frd.11.t
+	desc = sicameon_frtr_frd.11.d
+	picture = GFX_event_griffon_back
+	option = {
+		name = sicameon_frtr_frd.11.a
+		declare_war_on = {
+			target = MIT
+			type = annex_everything
+		}
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr_frd.12
+	title = sicameon_frtr_frd.12.t
+	desc = sicameon_frtr_frd.12.d
+	picture = GFX_event_griffon_back
+	option = {
+		name = sicameon_frtr_frd.12.a
+		add_political_power = 50
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr_frd.13
+	title = sicameon_frtr_frd.13.t
+	desc = sicameon_frtr_frd.13.d
+	picture = GFX_event_griffon_back
+	option = {
+		name = sicameon_frtr_frd.13.a
+		add_political_power = 50
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr_frd.14
+	title = sicameon_frtr_frd.14.t
+	desc = sicameon_frtr_frd.14.d
+	picture = GFX_event_griffon_back
+	option = {
+		name = sicameon_frtr_frd.14.a
+		add_political_power = 50
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr_frd.15
+	title = sicameon_frtr_frd.15.t
+	desc = sicameon_frtr_frd.15.d
+	picture = GFX_event_griffon_back
+	option = {
+		name = sicameon_frtr_frd.15.a
+		add_political_power = 50
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr_frd.16
+	title = sicameon_frtr_frd.16.t
+	desc = sicameon_frtr_frd.16.d
+	picture = GFX_event_griffon_back
+	option = {
+		name = sicameon_frtr_frd.16.a
+		create_wargoal = { 
+			type = annex_everything
+			target = BRF
+		}
+		BRF = { add_to_ROOT_potential_cores = yes }
+		create_wargoal = { 
+			type = annex_everything
+			target = GRW
+		}
+		GRW = { add_to_ROOT_potential_cores = yes }
+		create_wargoal = { 
+			type = annex_everything
+			target = LUS
+		}
+		LUS = { add_to_ROOT_potential_cores = yes }
+		create_wargoal = { 
+			type = annex_everything
+			target = GRU
+		}
+		GRU = { add_to_ROOT_potential_cores = yes }
+		create_wargoal = { 
+			type = annex_everything
+			target = GRY
+		}
+		GRY = { add_to_ROOT_potential_cores = yes }
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr_frd.17
+	title = sicameon_frtr_frd.17.t
+	desc = sicameon_frtr_frd.17.d
+	picture = GFX_event_griffon_back
+	option = {
+		name = sicameon_frtr_frd.17.a
+		GRI = {
+			country_event= { days = 1 id = sicameon_frtr_frd.18 }
+		}
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr_frd.18
+	title = sicameon_frtr_frd.18.t
+	desc = sicameon_frtr_frd.18.d
+	picture = GFX_event_griffon_back
+	option = {
+		name = sicameon_frtr_frd.18.a
+		ai_chance = {
+			factor = 90
+		}
+		SIC = {
+			country_event= { days = 1 id = sicameon_frtr_frd.19 }
+		}
+		set_cosmetic_tag = GRI_north_empire
+	}
+	option = {
+		name = sicameon_frtr_frd.18.b
+		ai_chance = {
+			factor = 10
+		}
+		SIC = {
+			country_event= { days = 1 id = sicameon_frtr_frd.20 }
+		}
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr_frd.19
+	title = sicameon_frtr_frd.19.t
+	desc = sicameon_frtr_frd.19.d
+	picture = GFX_event_griffon_back
+	option = {
+		name = sicameon_frtr_frd.19.a
+		add_political_power = 100
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr_frd.20
+	title = sicameon_frtr_frd.20.t
+	desc = sicameon_frtr_frd.20.d
+	picture = GFX_event_griffon_back
+	option = {
+		name = sicameon_frtr_frd.20.a
+		SIC = {
+			every_unit_leader = {
+				set_nationality = GRI
+			}
+			transfer_navy = { target = GRI }
+		}
+		GRI = {
+			annex_country = {
+			    target = SIC
+			    transfer_troops = yes
+			}
+		}
+		every_state = { limit = { is_core_of = SIC } add_core_of = GRI }
+		GRI = { change_tag_from = SIC }
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr_frd.21
+	title = sicameon_frtr_frd.21.t
+	desc = sicameon_frtr_frd.21.d
+	picture = GFX_event_griffon_back
+	option = {
+		name = sicameon_frtr_frd.21.a
+		set_cosmetic_tag = SIC_frederick_arantigos_new
+	}
+	is_triggered_only = yes
+}
+
+###############################################################
+
+
+add_namespace = sicameon_frtr_com
+country_event = {
+	id = sicameon_frtr_com.1
+	title = sicameon_frtr_com.1.t
+	desc = sicameon_frtr_com.1.d
+	picture = GFX_event_griffon_back
+	option = {
+		name = sicameon_frtr_com.1.a
+		complete_national_focus = SIC_agrarians
+	}
+	option = {
+		name = sicameon_frtr_com.1.b
+		complete_national_focus = SIC_syndicalists
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr_com.2
+	title = sicameon_frtr_com.2.t
+	desc = sicameon_frtr_com.2.d
+	picture = GFX_event_griffon_back
+	option = {
+		name = sicameon_frtr_com.2.a
+		swap_ideas = {
+			remove_idea = SIC_COM_religious_question
+			add_idea = SIC_COM_religion_allowed
+		}
+	}
+	option = {
+		name = sicameon_frtr_com.2.b
+		swap_ideas = {
+			remove_idea = SIC_COM_religious_question
+			add_idea = SIC_COM_religion_squashed
+		}
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr_com.3
+	title = sicameon_frtr_com.3.t
+	desc = sicameon_frtr_com.3.d
+	picture = GFX_event_griffon_back
+	option = {
+		name = sicameon_frtr_com.3.a
+		swap_ideas = {
+			remove_idea = SIC_COM_dissidence_question
+			add_idea = SIC_COM_political_freedoms
+		}
+	}
+	option = {
+		name = sicameon_frtr_com.3.b
+		swap_ideas = {
+			remove_idea = SIC_COM_dissidence_question
+			add_idea = SIC_COM_political_uniformity
+		}
+	}
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = sicameon_frtr_com.4
+	title = sicameon_frtr_com.4.t
+	desc = sicameon_frtr_com.4.d
+	picture = GFX_event_griffon_back
+	option = {
+		name = sicameon_frtr_com.4.a
+		ROOT = {
+			add_to_faction = WNG
+		}
+	}
+	option = {
+		name = sicameon_frtr_com.4.b
+	}
+	is_triggered_only = yes
+}
+
+##############################PUPPETS#############################
+
+country_event = {
+	id = sicameon_frtr_com.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: sicameon_frtr_com.5"}
+	hidden = yes
+
+	mean_time_to_happen = { days = 0 }
+
+	trigger = {
+		original_tag = FAL
+		FAL = {
+			is_subject = yes
+			is_subject_of = SIC
+		}
+		SIC = { has_completed_focus = SIC_red_star_rising }
+	}
+
+	option = {
+		FAL = { set_cosmetic_tag = FAL_ssr }
+		add_ideas = workers_and_peasants_red_army
+		add_ideas = war_economy
+		SIC = {
+			set_autonomy = {
+				target = FAL
+				autonomous_state = autonomy_soviet_socialist_republic
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sicameon_frtr_com.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: sicameon_frtr_com.6"}
+	hidden = yes
+
+	mean_time_to_happen = { days = 0 }
+
+	trigger = {
+		original_tag = BAN
+		BAN = {
+			is_subject = yes
+			is_subject_of = SIC
+		}
+		SIC = { has_completed_focus = SIC_red_star_rising }
+	}
+
+	option = {
+		BAN = { set_cosmetic_tag = BAN_ssr }
+		add_ideas = workers_and_peasants_red_army
+		add_ideas = war_economy
+		SIC = {
+			set_autonomy = {
+				target = BAN
+				autonomous_state = autonomy_soviet_socialist_republic
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sicameon_frtr_com.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: sicameon_frtr_com.7"}
+	hidden = yes
+
+	mean_time_to_happen = { days = 0 }
+
+	trigger = {
+		original_tag = CYA
+		CYA = {
+			is_subject = yes
+			is_subject_of = SIC
+		}
+		SIC = { has_completed_focus = SIC_red_star_rising }
+	}
+
+	option = {
+		CYA = { set_cosmetic_tag = CYA_ssr }
+		add_ideas = workers_and_peasants_red_army
+		add_ideas = war_economy
+		SIC = {
+			set_autonomy = {
+				target = CYA
+				autonomous_state = autonomy_soviet_socialist_republic
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sicameon_frtr_com.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: sicameon_frtr_com.8"}
+	hidden = yes
+
+	mean_time_to_happen = { days = 0 }
+
+	trigger = {
+		original_tag = MIT
+		MIT = {
+			is_subject = yes
+			is_subject_of = SIC
+		}
+		SIC = { has_completed_focus = SIC_red_star_rising }
+	}
+
+	option = {
+		MIT = { set_cosmetic_tag = MIT_ssr }
+		add_ideas = workers_and_peasants_red_army
+		add_ideas = war_economy
+		SIC = {
+			set_autonomy = {
+				target = MIT
+				autonomous_state = autonomy_soviet_socialist_republic
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sicameon_frtr_com.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: sicameon_frtr_com.9"}
+	hidden = yes
+
+	mean_time_to_happen = { days = 0 }
+
+	trigger = {
+		original_tag = BOI
+		BOI = {
+			is_subject = yes
+			is_subject_of = SIC
+		}
+		SIC = { has_completed_focus = SIC_red_star_rising }
+	}
+
+	option = {
+		BOI = { set_cosmetic_tag = BOI_ssr }
+		add_ideas = workers_and_peasants_red_army
+		add_ideas = war_economy
+		SIC = {
+			set_autonomy = {
+				target = BOI
+				autonomous_state = autonomy_soviet_socialist_republic
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sicameon_frtr_com.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: sicameon_frtr_com.10"}
+	hidden = yes
+
+	mean_time_to_happen = { days = 0 }
+
+	trigger = {
+		original_tag = LAK
+		LAK = {
+			is_subject = yes
+			is_subject_of = SIC
+		}
+		SIC = { has_completed_focus = SIC_red_star_rising }
+	}
+
+	option = {
+		LAK = { set_cosmetic_tag = LAK_ssr }
+		add_ideas = workers_and_peasants_red_army
+		add_ideas = war_economy
+		SIC = {
+			set_autonomy = {
+				target = LAK
+				autonomous_state = autonomy_soviet_socialist_republic
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sicameon_frtr_com.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: sicameon_frtr_com.11"}
+	hidden = yes
+
+	mean_time_to_happen = { days = 0 }
+
+	trigger = {
+		original_tag = WNG
+		WNG = {
+			is_subject = yes
+			is_subject_of = SIC
+		}
+		SIC = { has_completed_focus = SIC_red_star_rising }
+	}
+
+	option = {
+		WNG = { set_cosmetic_tag = WNG_ssr }
+		add_ideas = workers_and_peasants_red_army
+		add_ideas = war_economy
+		SIC = {
+			set_autonomy = {
+				target = WNG
+				autonomous_state = autonomy_soviet_socialist_republic
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sicameon_frtr_com.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: sicameon_frtr_com.12"}
+	hidden = yes
+
+	mean_time_to_happen = { days = 0 }
+
+	trigger = {
+		original_tag = ARA
+		ARA = {
+			is_subject = yes
+			is_subject_of = SIC
+		}
+		SIC = { has_completed_focus = SIC_red_star_rising }
+	}
+
+	option = {
+		ARA = { set_cosmetic_tag = ARA_ssr }
+		add_ideas = workers_and_peasants_red_army
+		add_ideas = war_economy
+		SIC = {
+			set_autonomy = {
+				target = ARA
+				autonomous_state = autonomy_soviet_socialist_republic
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sicameon_frtr_com.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: sicameon_frtr_com.13"}
+	hidden = yes
+
+	mean_time_to_happen = { days = 0 }
+
+	trigger = {
+		original_tag = FRN
+		FRN = {
+			is_subject = yes
+			is_subject_of = SIC
+		}
+		SIC = { has_completed_focus = SIC_red_star_rising }
+	}
+
+	option = {
+		FRN = { set_cosmetic_tag = FRN_ssr }
+		add_ideas = workers_and_peasants_red_army
+		add_ideas = war_economy
+		SIC = {
+			set_autonomy = {
+				target = FRN
+				autonomous_state = autonomy_soviet_socialist_republic
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sicameon_frtr_com.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: sicameon_frtr_com.14"}
+	hidden = yes
+
+	mean_time_to_happen = { days = 0 }
+
+	trigger = {
+		original_tag = TAL
+		TAL = {
+			is_subject = yes
+			is_subject_of = SIC
+		}
+		SIC = { has_completed_focus = SIC_red_star_rising }
+	}
+
+	option = {
+		TAL = { set_cosmetic_tag = TAL_ssr }
+		add_ideas = workers_and_peasants_red_army
+		add_ideas = war_economy
+		SIC = {
+			set_autonomy = {
+				target = TAL
+				autonomous_state = autonomy_soviet_socialist_republic
+			}
+		}
+	}
+}
+country_event = {
+	id = sicameon_frtr_com.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: sicameon_frtr_com.15"}
+	hidden = yes
+
+	mean_time_to_happen = { days = 0 }
+
+	trigger = {
+		original_tag = JES
+		JES = {
+			is_subject = yes
+			is_subject_of = SIC
+		}
+		SIC = { has_completed_focus = SIC_red_star_rising }
+	}
+
+	option = {
+		JES = { set_cosmetic_tag = JES_ssr }
+		add_ideas = workers_and_peasants_red_army
+		add_ideas = war_economy
+		SIC = {
+			set_autonomy = {
+				target = JES
+				autonomous_state = autonomy_soviet_socialist_republic
+			}
+		}
+	}
+}
+country_event = {
+	id = sicameon_frtr_com.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: sicameon_frtr_com.16"}
+	hidden = yes
+
+	mean_time_to_happen = { days = 0 }
+
+	trigger = {
+		original_tag = GRW
+		GRW = {
+			is_subject = yes
+			is_subject_of = SIC
+		}
+		SIC = { has_completed_focus = SIC_red_star_rising }
+	}
+
+	option = {
+		GRW = { set_cosmetic_tag = GRW_ssr }
+		add_ideas = workers_and_peasants_red_army
+		add_ideas = war_economy
+		SIC = {
+			set_autonomy = {
+				target = GRW
+				autonomous_state = autonomy_soviet_socialist_republic
+			}
+		}
+	}
+}
