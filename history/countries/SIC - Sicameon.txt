@@ -100,6 +100,7 @@ country_event = {
 	days = 22
 }
 
+recruit_character = SIC_Petronila
 recruit_character = SIC_frtr_Regency_Council
 recruit_character = SIC_father_jose
 recruit_character = SIC_don_espadarte

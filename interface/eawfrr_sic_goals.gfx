@@ -11,6 +11,11 @@ spriteTypes = {
 		name = "GFX_SIC_all_is_well"
 		texturefile = "gfx/interface/goals/SIC_all_is_well.dds"
 	}
+
+	SpriteType = {
+		name = "goal_national_populism"
+		texturefile = "gfx/interface/goals/goal_national_populism.dds"
+	}
 	
 	SpriteType = {
 		name = "GFX_SIC_an_interesting_proposal"

@@ -6102,7 +6102,7 @@ focus_tree = {
 		icon = GFX_SIC_make_the_best_out_of_this
 		cost = 5
 		relative_position_id = SIC_springtime_sic 
-		x = 3
+		x = 0
 		y = 1
 		prerequisite = {
 			focus = SIC_springtime_sic
@@ -6113,7 +6113,7 @@ focus_tree = {
 	}	
 	focus = {
 		id = SIC_justify_regency
-		icon = GFX_SIC_justify_the_regency
+		icon = GFX_SIC_make_the_best_out_of_this
 		cost = 8	
 		relative_position_id = SIC_springtime_sic
 		x = 2
@@ -6131,12 +6131,13 @@ focus_tree = {
 		icon = GFX_SIC_there_is_no_hope_without_action
 		cost = 5
 		relative_position_id = SIC_springtime_sic
-		x = -3
+		x = -1
 		y = 2
 		ai_will_do = { factor = 100 }
-		prerequisite = {
-			focus = SIC_make_the_best
-		}
+		prerequisite = { focus = SIC_make_the_best }
+		prerequisite = { focus = SIC_noble_pride }
+		prerequisite = { focus = SIC_justify_regency }
+		
 		completion_reward = {
 			country_event = sicameon_frtr.2
 		}
@@ -6146,8 +6147,8 @@ focus_tree = {
 		icon = GFX_SIC_deradicalization_campaign
 		cost = 5
 		relative_position_id = SIC_springtime_sic
-		x = -4
-		y = 3
+		x = -3
+		y = 2
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 		add_political_power = -75
@@ -6157,21 +6158,20 @@ focus_tree = {
 				}
 		add_stability = -0.1
 		}
-		prerequisite = {
-			focus = SIC_no_hope_action
-		}
+		prerequisite = { focus = SIC_make_the_best }
+		prerequisite = { focus = SIC_noble_pride }
+		prerequisite = { focus = SIC_justify_regency }
 	}
 	focus = {
 		id = SIC_peoples_duke
 		icon = GFX_SIC_the_peoples_grand_duke
 		cost = 5
 		relative_position_id = SIC_springtime_sic
-		x = -4
-		y = 4
+		x = 6
+		y = 8
 		ai_will_do = { factor = 100 }
-		prerequisite = {
-			focus = SIC_deradical_cam
-		}
+		prerequisite = { focus = SIC_pardon_republicans }
+		prerequisite = { focus = SIC_hearts_minds }
 		completion_reward = {
 			add_ideas = duke_of_the_people
 		}
@@ -6181,27 +6181,29 @@ focus_tree = {
 		icon = GFX_SIC_anti_corruption_campaign
 		cost = 8
 		relative_position_id = SIC_springtime_sic
-		x = -2
-		y = 3
+		x = 3
+		y = 2
 		ai_will_do = { factor = 100 }
-		prerequisite = {
-			focus = SIC_no_hope_action
-		}
+		prerequisite = { focus = SIC_make_the_best }
+		prerequisite = { focus = SIC_noble_pride }
+		prerequisite = { focus = SIC_justify_regency }
 		completion_reward = {
 			custom_effect_tooltip = SIC_FRTR_fight_piracy
 		}
 	}
 	focus = {
 		id = SIC_demonize_sword
-		icon = GFX_SIC_demozise_the_swordfish
+		icon = GFX_SIC_soldiers_of_a_great_sicameon
 		cost = 5
 		relative_position_id = SIC_springtime_sic
-		x = -2
+		x = -3
 		y = 4
 		ai_will_do = { factor = 100 }
 		prerequisite = {
-			focus = SIC_anticorruption
+			focus = SIC_marching_sunwards
 		}
+		mutually_exclusive = { focus = SIC_second_chance }
+		mutually_exclusive = { focus = SIC_nazi_sicameon }
 		completion_reward = {
 			add_timed_idea = { 
 				idea = antiespadarte
@@ -6214,11 +6216,26 @@ focus_tree = {
 		icon = GFX_SIC_hearts_and_minds
 		cost = 8
 		relative_position_id = SIC_springtime_sic
-		x = -2
-		y = 5
+		x = 5
+		y = 7
 		ai_will_do = { factor = 100 }
 		prerequisite = {
-			focus = SIC_demonize_sword
+			focus = SIC_democracy_now
+		}
+		completion_reward = {
+			add_ideas = faith_harmony
+		}
+	}
+	focus = {
+		id = SIC_economy_5
+		icon = GFX_SIC_hearts_and_minds
+		cost = 8
+		relative_position_id = SIC_springtime_sic
+		x = 6
+		y = 9
+		ai_will_do = { factor = 100 }
+		prerequisite = {
+			focus = SIC_peoples_duke
 		}
 		completion_reward = {
 			add_ideas = faith_harmony
@@ -6229,23 +6246,23 @@ focus_tree = {
 		icon = GFX_SIC_but_bring_forth_immediate_change
 		cost = 5
 		relative_position_id = SIC_springtime_sic
-		x = 2
+		x = 1
 		y = 2
 		ai_will_do = { factor = 100 }
-		prerequisite = {
-			focus = SIC_justify_regency
-		}
+		prerequisite = { focus = SIC_make_the_best }
+		prerequisite = { focus = SIC_noble_pride }
+		prerequisite = { focus = SIC_justify_regency }
 		completion_reward = {
 			swap_ideas = { remove_idea = republican_tension add_idea = republican_tension_3 }
 			country_event = { days = 0 id = sicameon_frtr.27 }
 		}
 	}
 	focus = {
-		id = SIC_convince_council
-		icon = GFX_SIC_convince_the_former_council
+		id = SIC_marching_sunwards
+		icon = GFX_SIC_facing_the_sun
 		cost = 8
 		relative_position_id = SIC_springtime_sic
-		x = 1
+		x = 0
 		y = 3
 		ai_will_do = { factor = 100 }
 		completion_reward = {
@@ -6255,16 +6272,17 @@ focus_tree = {
 				popularity = 0.1
 				}
 		}
-		prerequisite = {
-			focus = SIC_immediate_change
-		}
+		prerequisite = { focus = SIC_immediate_change }
+		prerequisite = { focus = SIC_anticorruption }
+		prerequisite = { focus = SIC_no_hope_action }
+		prerequisite = { focus = SIC_deradical_cam }
 	}
 	focus = {
 		id = SIC_second_chance
 		icon = GFX_SIC_everybody_deserves_a_second_chance
 		cost = 5
 		relative_position_id = SIC_springtime_sic
-		x = 1
+		x = 0
 		y = 4
 		ai_will_do = { factor = 100 }
 		completion_reward = {
@@ -6275,19 +6293,21 @@ focus_tree = {
 			}
 		}
 		prerequisite = {
-			focus = SIC_convince_council
+			focus = SIC_marching_sunwards
 		}
+		mutually_exclusive = { focus = SIC_nazi_sicameon }
+		mutually_exclusive = { focus = SIC_demonize_sword }
 	}
 	focus = {
 		id = SIC_pardon_republicans
 		icon = GFX_SIC_pardon_the_republicans
 		cost = 8
 		relative_position_id = SIC_springtime_sic
-		x = 3
-		y = 3
+		x = 7
+		y = 7
 		ai_will_do = { factor = 100 }
 		prerequisite = {
-			focus = SIC_immediate_change
+			focus = SIC_democracy_now
 		}
 		completion_reward = {
 			swap_ideas = {
@@ -6301,22 +6321,22 @@ focus_tree = {
 		icon = GFX_SIC_democracy_now
 		cost = 5
 		relative_position_id = SIC_springtime_sic
-		x = 3
-		y = 4
+		x = 6
+		y = 6
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 		add_political_power = 100 
 		}
 		prerequisite = {
-			focus = SIC_pardon_republicans
+			focus = SIC_arriba_sicameon
 		}
 	}
 	focus = {
-		id = SIC_free_elections
+		id = SIC_arriba_sicameon
 		icon = GFX_SIC_free_elections
 		cost = 8
 		relative_position_id = SIC_springtime_sic
-		x = 2
+		x = 0
 		y = 5
 		ai_will_do = { factor = 100 }
 		completion_reward = {
@@ -6326,7 +6346,27 @@ focus_tree = {
 			focus = SIC_second_chance
 		}
 		prerequisite = {
-			focus = SIC_democracy_now
+			focus = SIC_demonize_sword
+		}
+		prerequisite = {
+			focus = SIC_nazi_sicameon
+		}
+	}
+	focus = {
+		id = SIC_nazi_sicameon
+		icon = goal_national_populism
+		cost = 8
+		relative_position_id = SIC_springtime_sic
+		x = 3
+		y = 4
+		mutually_exclusive = { focus = SIC_second_chance }
+		mutually_exclusive = { focus = SIC_demonize_sword }
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			remove_ideas = republican_tension_4
+		}
+		prerequisite = {
+			focus = SIC_marching_sunwards
 		}
 	}
 
@@ -7162,44 +7202,9 @@ focus_tree = {
 	}
 
 	#Focus for Irredentist claim
-	focus = {
-		id = SIC_irredentist_claim
-		icon = GFX_SIC_irredentist_claims
-		x = 47
-		y = 8
-		cost = 5.8
-		available_if_capitulated = yes
-		available = {
-			has_completed_focus = SIC_convince_council
-		}
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SIC_irredentist_claim"
-			GRU = {
-				country_event= { days = 1 id = sicameon_frtr.5 }
-			}
-		}
-	}
-
+	
 	#Focus for The best defense...
-	focus = {
-		id = SIC_the_best_defense
-		icon = GFX_SIC_the_best_defence
-		x = 47
-		y = 9
-		cost = 1.5
-		available_if_capitulated = yes
-		prerequisite = { focus = SIC_irredentist_claim }
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SIC_the_best_defense"
-			add_ideas = tactical_reorganization_efforts
-		}
-	}
+	
 
 	#Focus for Bargain for riverland funds
 	focus = {
@@ -8117,7 +8122,7 @@ focus_tree = {
 #		icon = GFX_SIC_anti_corruption_campaign
 #		prerequisite = { focus = SIC_our_former_allies }
 #		cost = 3
-#		x = -2
+#		x = 3
 #		y = 2
 #		relative_position_id = SIC_our_former_allies
 #		ai_will_do = { factor = 100 }

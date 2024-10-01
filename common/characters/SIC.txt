@@ -74,6 +74,15 @@
 			}
 		}
 	}
+	
+	SIC_Petronila={
+		name=SIC_Petronila
+		portraits={
+			civilian={
+				large="gfx/leaders/SIC/Petronila_new.tga"
+			}
+		}
+	}
 
 	SIC_Theresa={
 		name=GRW_Theresa

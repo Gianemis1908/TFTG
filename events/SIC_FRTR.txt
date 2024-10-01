@@ -21,6 +21,40 @@ country_event = {
 }
 
 country_event = {
+	id =  sicameon_frtr.747
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sicameon_frtr.1"}
+	title =  sicameon_frtr.747.t
+	desc =  sicameon_frtr.747.d
+	picture = GFX_event_griffon_back 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sicameon.169.a
+		
+			add_country_leader_role = {
+				character = SIC_Petronila
+				promote_leader = yes
+				country_leader = {
+					ideology = conservatism
+					expire = "1965.1.1.1"
+					traits = {  }
+				}
+			}	
+		set_party_name= {
+			ideology = conservatism
+			long_name = SIC_petr_kings_party_long
+			name = SIC_petr_kings_party
+		}
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+		}
+		hidden_effect = {
+			set_cosmetic_tag = SIC_tomado_the_king
+		}
+	}
+country_event = {
 	id = sicameon_frtr.3
 	immediate = {log = "[GetDateText]: [Root.GetName]: event sicameon_frtr.1"}
 	title = sicameon_frtr.3.t

@@ -13,6 +13,7 @@
  SIC_Frederick_of_Yale_Gamia:0 "Frederick of Yale-Gamia"
  SIC_Tomado_of_Brodfeld:0 "Tomado of Brodfeld"
  SIC_Petronilo_of_Midoria:0 "Petronila of Midoria"
+ Sic_Petronila:0" Grand Duchess Petronila"
  SIC_juan_guilloto:0 "Juan Guilloto León"
  SIC_Arantigos_Frederick:0 "Arantigos Frederick I"
 
@@ -572,6 +573,9 @@
 
 ### Events ###
  
+ sicameon_frtr.747.t:0 "In The Dark of The Night"
+ sicameon_frtr.747.d:0 "get tgtfd lol"
+ sicameon_frtr.747.a:0 "Petronila is here"
  sicameon_frtr_frd.1.t:0 "Collaborationists"
  sicameon_frtr_frd.1.d:0 "From Darkness comes light and from divided and fragmented rebellions come opportunities:\nOur enemies are many as the islands in the Asterionese archipelago, countless even, and even if weak and scattered far from each other they still pose a somewhat significant threat for the stability of our ever-expanding realm and, besides fighting fire with fire, the optimal option is to make way for a cold calculated series of token concessions, dividing and conquering the bulls with both terror and diplomacy.\nTo divide and conquer is necessary for the future of the empire, we arent allowed to fail.\nFor glory, stability and the future of the Kaiserreich"
  sicameon_frtr_frd.1.a:0 "Fight for our future."
